@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../views/Home/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -8,7 +8,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
-    path: "/about",
+    path: "/about/:slug",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
