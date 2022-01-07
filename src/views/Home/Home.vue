@@ -25,8 +25,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { reactive, toRefs, computed } from "vue";
+import { defineComponent, reactive, toRefs, computed } from "vue";
 
 export default defineComponent({
   name: "Home",
@@ -49,8 +48,6 @@ export default defineComponent({
     fetch("https://pokeapi.co/api/v2/pokemon/")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-
         state.pokemons = data.results;
         state.pokemonId = data.results.reduce(
           (acc: any, curr: any, index: any) =>
