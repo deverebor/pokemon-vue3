@@ -1,0 +1,36 @@
+@import '@/styles/core.scss';
+
+.about__pokemon {
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    margin: var(--space-xs) auto;
+    background: $aqua-200;
+    box-shadow: 11px 11px 20px 2px rgb(0 0 0 / 50%);
+  }
+  &-name {
+    font-size: var(--font-size-md);
+    color: $blue-700;
+    text-transform: uppercase;
+  }
+
+  &-image {
+    display: flex;
+    justify-content: center;
+
+    &-profile {
+      width: 200px;
+    }
+  }
+
+  &-types {
+    color: $green-400;
+
+    &-name {
+      color: $blue-700;
+    }
+  }
+}
