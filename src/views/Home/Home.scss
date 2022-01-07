@@ -1,0 +1,32 @@
+@import '@/styles/core.scss';
+
+.home {
+  &__search {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &-input {
+      margin-top: var(--space-xs);
+      padding: var(--space-xxs);
+      border: 2px solid $aqua-500;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    margin-top: var(--space-xs);
+    padding: var(--space-xxs);
+
+    &-modal {
+      margin-left: var(--space);
+      font-size: var(--font-size);
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+}
